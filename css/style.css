@@ -1,0 +1,139 @@
+.header{
+    background-color: #a0d8ef;
+    width:100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.Tih_h1{
+    Color:#fff;
+    background-color: #f60;
+    padding: 5px 10px;
+}
+
+.header-logo{
+    float:left;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.header-list{
+    float:right;
+}
+
+.header-list li {
+    Float:left;
+    Padding:33px 20px;
+   }
+   
+li {
+    list-style:none;
+}
+
+.cleat{
+    clear: both;
+}
+
+.Tih_h2{
+    margin-left: 4%;
+}
+
+.border-bottom_1E90FF{
+    border-bottom: solid medium #1E90FF;
+}
+
+.center{
+    text-align: center;
+}
+
+.item1_ma{
+    display: inline-block;
+}
+
+.item1{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(120, 255, 60);
+    height: 400px;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.link_nahida{
+    text-decoration: none;
+}
+
+.item1 .link_nahida{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text_happy{
+    margin-top: 20px;
+    Color:#fff;
+    font-size: 150%;
+}
+
+.img_happy{
+    position: relative;
+    height:285.1px;
+    width:289.4px;
+    top: 105px;
+}
+
+.Pointing{
+    position: fixed;
+    display: inline-block;
+    top: 68%;
+    left: 68%;
+}
+
+.img_Pointing{
+    position: absolute;
+    display: inline-block;
+    height: 148.8px; 
+    width: 148.8px;
+    top: 0;
+    left: 0;
+}
+
+.Pointing_Dialogue{
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 0 10px;
+    top: -5px;
+    left: 50px;
+}
+
+.z-index10{
+    z-index: 10;
+}
+
+.z-index20{
+    z-index: 20;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.pc_only{
+    display:none;
+}
+
+@media(min-width:768px){
+    .pc_only{
+        display: block;
+    }
+}
