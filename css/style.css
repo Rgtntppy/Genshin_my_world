@@ -155,10 +155,6 @@ li {
     margin-left: 4%;
 }
 
-.border-bottom_1E90FF{
-    border-bottom: solid medium #1E90FF;
-}
-
 .center{
     text-align: center;
 }
@@ -316,4 +312,20 @@ li {
 
 .Q_Na__img_item1{
     top:40px;
+}
+
+.Q_Na__img_item2{
+    position: relative;
+    width:289.4px;
+    top: 30px;
+    left: auto;
+    line-height: 285.1;
+}
+
+.back_to_TopPage{
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #fff;
 }
