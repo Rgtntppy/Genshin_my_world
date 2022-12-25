@@ -7,26 +7,42 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css" >
     <link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
+<body class="sky">
     <header>
         <div class="header">
             <div class= "header-logo"><h1><span class="Tih_h1">This is heaven!</span></h1></div>
             <div class="header-list pc_only">
                 <ul>
-                    <li><a href="" class="">概要</a></li>
-                    <li><a href="" class="">お問い合わせ</a></li>
-                    <li><a href="" class="">クレーム</a></li>
+                    <li><a href="" class="background_cloud">概要</a></li>
+                    <li><a href="" class="background_cloud">ご意見</a></li>
+                    <li><a href="" class="background_cloud">お問い合わせ</a></li>
+                    <li><a href="" class="background_cloud">クレーム</a></li>
                 </ul>
             </div>
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <li class="nav-items__item"><a href="">概要</a></li>
+                    <li class="nav-items__item"><a href="">ご意見</a></li>
+                    <li class="nav-items__item"><a href="">お問い合わせ</a></li>
+                    <li class="nav-items__item"><a href="">クレーム</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
     <main>
-        <h2 class="Tih_h2 clear"><span class="border-bottom_1E90FF">みんなで幸せになりましょう</span></h2>
+        <div class="head"></div>
+        <h2 class="Tih_h2"><span class="border-bottom_1E90FF">みんなで幸せになりましょう</span></h2>
+        <div class="center_ma">    
             <div class="center">
                 <div class="item1_ma z-index10">
                     <div class="item1">
                         <a href="Q_Nahida.html" class="link_nahida"><p class="text_happy z-index10">ナヒーダちゃんと<br>幸せになる</p></a>
-                        <a href="Q_Nahida.html"><img src="img/S__40542210.jpg" class="img_happy z-index10"></a>
+                        <a href="Q_Nahida.html" class=""><img src="img/S__40542210.jpg" class="img_happy z-index10"></a>
                     </div>
                 </div>
                 <div class="Pointing z-index20">
@@ -43,13 +59,25 @@
                     </div>
                 </div>
             </div>
-            
-        <div class="clear"></div>
+        </div>
+
+        <div class="top_button center_ma"><a href="#" id="backToTop">TOPに戻る</a></div>
     </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+30JU5yExlq6GSTGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <div class="null"></div>
+        <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
         <script>
             $(function(){
-
+                const ham = $('#js-hamburger');//js-hamburgerの要素を取得し、変数hamに格納
+                const nav = $('#js-nav')//js-navの要素を取得し、変数navに格納
+                ham.on('click', function () {//ハンバーガーメニューをクリックしたら
+                    ham.toggleClass('active');//ハンバーガーメニューにactiveクラスを付け足し
+                    nav.toggleClass('active');//ナビゲーションメニューにactiveクラスを付け外し
+                });
+                $('#backToTop').click(function() {
+                    $('body,html').animate({
+                        scrollTop:0
+                    },500);
+                });
             });
         </script>
 </body>

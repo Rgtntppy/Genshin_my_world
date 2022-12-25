@@ -2,14 +2,74 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is heaven!</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/reset.css" type="text/css" >
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
-    <h1><span class="Tih_h1">This is heaven!</span></h1>
-        <div class="item1">
-            <a href="#"><p class="text_happy">ナヒーダちゃんと<br>幸せになる</p></a>
-            <a href="#"><img src="#" height=23% width=23% class="img_happy"></a>
-        </div> 
+<body class="sky">
+    <header>
+        <div class="header">
+            <div class= "header-logo"><h1><span class="Tih_h1">This is heaven!</span></h1></div>
+            <div class="header-list pc_only">
+                <ul>
+                    <li><a href="" class="background_cloud">概要</a></li>
+                    <li><a href="" class="background_cloud">ご意見</a></li>
+                    <li><a href="" class="background_cloud">お問い合わせ</a></li>
+                    <li><a href="" class="background_cloud">クレーム</a></li>
+                </ul>
+            </div>
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <li class="nav-items__item"><a href="">概要</a></li>
+                    <li class="nav-items__item"><a href="">ご意見</a></li>
+                    <li class="nav-items__item"><a href="">お問い合わせ</a></li>
+                    <li class="nav-items__item"><a href="">クレーム</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="head"></div>
+    <main>
+        <h2 class="h2__title"><span class="background_fff h2__title__text">ナヒーダちゃんかわいい</span></h2>
+        <div class="center_ma">
+            <img src="img/S__40542210.jpg" class="img_happy z-index10 Q_Na__img_item1">
+        </div>
+        
+        <p class="question"><span class="background_fff">ナヒーダちゃんのことはかわいいと思いますか？</span></p>
+
+        <div class="center_ma">
+            <div class="center button_block">
+                <a href="This_is_heaven!.html" class="button__a"><button class="button">はい！</button></a>
+            </div>
+            <div class="center button_block">
+                <a href="This_is_heaven!.html" class="button__a"><button class="button">Yes!</button></a>
+            </div>
+            <div class="center button_block">
+                <a href="This_is_heaven!.html" class="button__a"><button class="button">ナヒーダちゃんかわいい！</button></a>
+            </div>
+        </div>
+    </main> 
+        <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                const ham = $('#js-hamburger');//js-hamburgerの要素を取得し、変数hamに格納
+                const nav = $('#js-nav')//js-navの要素を取得し、変数navに格納
+                ham.on('click', function () {//ハンバーガーメニューをクリックしたら
+                    ham.toggleClass('active');//ハンバーガーメニューにactiveクラスを付け足し
+                    nav.toggleClass('active');//ナビゲーションメニューにactiveクラスを付け外し
+                });
+                $('#backToTop').click(function() {
+                    $('body,html').animate({
+                        scrollTop:0
+                    },500);
+                });
+            });
+        </script>
 </body>
 </html>
