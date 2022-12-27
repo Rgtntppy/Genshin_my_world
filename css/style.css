@@ -151,10 +151,6 @@ li {
     background-attachment: fixed;
 }
 
-.Tih_h2{
-    margin-left: 4%;
-}
-
 .center{
     text-align: center;
 }
@@ -209,15 +205,15 @@ li {
 .Pointing{
     position: fixed;
     display: inline-block;
-    top: 55%;
-    left: 60%;
+    top: 80%;
+    left: 75%;
 }
 
 .img_Pointing{
     position: absolute;
     display: inline-block;
-    height: 104.16px; 
-    width: 104.16px;
+    height: 74.4px; 
+    width: 74.4px;
     top: 0;
     left: 0;
 }
@@ -227,9 +223,11 @@ li {
     display: inline-flex;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50px;
-    padding: 0 10px;
-    top: -5px;
-    left: 50px;
+    padding: 1px 8px;
+    top: -20px;
+    left: 15px;
+    font-size: 50%;
+    text-indent: 1em;
 }
 
 .z-index10{
@@ -245,7 +243,7 @@ li {
 }
 
 .null{
-    height: 250px;
+    height: 200px;
 }
 
 .pc_only{
@@ -281,7 +279,7 @@ li {
 
 .h2__title{
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .h2__title__text{
@@ -291,8 +289,7 @@ li {
 .question{
     display: inline-flex;
     flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: 15px;
+    margin: 60px 20px 15px 20px;
     text-align: center;
 }
 
