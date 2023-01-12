@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is heaven!</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" >
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="sky">
+    <header>
+        <div class="header">
+            <div class= "header-logo"><h1><span class="Tih_h1">This is heaven!</span></h1></div>
+            <div class="header-list pc_only">
+                <ul>
+                    <li><a href="../This_is_heaven!.html" class="background_cloud none_underline">TOPページに戻る</a></li>
+                    <li><a href="../作ったもの一覧.html" class="background_cloud none_underline">作ったもの一覧</a></li>
+                    <li><a href="" class="background_cloud none_underline">概要</a></li>
+                    <li><a href="" class="background_cloud none_underline">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <nav class="header__nav nav" id="js-nav">
+                <ul class="nav__items nav-items">
+                    <li class="nav-items__item"><a href="../This_is_heaven!.html">TOPページに戻る</a></li>
+                    <li class="nav-items__item"><a href="../作ったもの一覧.html">作ったもの一覧</a></li>
+                    <li class="nav-items__item"><a href="">概要</a></li>
+                    <li class="nav-items__item"><a href="">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+        <div class="head"></div>
+    <main>
+        <div class="slider">
+            <div><img src="../img/S__1114114.jpg" alt="" /></div>
+            <div><img src="../img/S__40542210.jpg" alt="" /></div>
+            <div><img src="../img/S__1114114.jpg" alt="" /></div>
+            <div><img src="../img/S__40542210.jpg" alt="" /></div>
+          </div>
+    </main>
+        <div class="null"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function(){
+            const ham = $('#js-hamburger');//js-hamburgerの要素を取得し、変数hamに格納
+            const nav = $('#js-nav')//js-navの要素を取得し、変数navに格納
+            ham.on('click', function () {//ハンバーガーメニューをクリックしたら
+                ham.toggleClass('active');//ハンバーガーメニューにactiveクラスを付け足し
+                nav.toggleClass('active');//ナビゲーションメニューにactiveクラスを付け外し
+            });
+            $('#backToTop').click(function() {
+                $('body,html').animate({
+                    scrollTop:0
+                },500);
+            });
+            $(".slider").slick({//スライダー部分
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                centerPadding: "30px",
+                dots: true,
+                // fade: true,
+                slidesToShow: 3,
+                speed: 400,
+            });
+        });
+    </script>
+</body>
+</html>
