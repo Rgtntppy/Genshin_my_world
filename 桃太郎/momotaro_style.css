@@ -1,0 +1,16 @@
+.null{
+    height: 100px;
+}
+
+center{
+    text-align: center;
+}
+
+.peach_left_delta{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 0 40px 60px;
+    border-color: transparent transparent transparent #f09199;
+}
